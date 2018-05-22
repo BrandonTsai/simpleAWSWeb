@@ -1,0 +1,10 @@
+version: "3"
+services:
+  simple-web:
+    image: simple-web:latest
+    build: 
+      context: .
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "80:80"
